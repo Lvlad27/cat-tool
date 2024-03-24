@@ -1,0 +1,13 @@
+{
+  "trailingComma": "es5",
+  "singleQuote": false,
+  "semi": true,
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "importOrderSeparation": true,
+  "importOrderSpecifiers": true
+}
