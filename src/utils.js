@@ -40,18 +40,17 @@ export function numberLines(str) {
 	return numberedLines.join("\n");
 }
 
-// Does not work with sed G. Need to fix for it
 export function numberNonEmptyLines(str) {
 	const lines = str.split(/\n/);
 	let numberedLines = [];
 	const numberOfLines = lines.length - 1;
 	let counter = 1;
-	lines.map((line) => {
+	for (let line of lines) {
 		if (line.trim() === "") {
-			return numberedLines.push(`${line}`);
+			numberedLines.push(line);
 		} else {
-			return numberedLines.push(`${counter++} ${line}`);
+			numberedLines.push(`${counter++} ${line}`);
 		}
-	});
+	}
 	return numberedLines.join("\n");
 }

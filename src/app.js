@@ -38,10 +38,10 @@ async function myCat() {
 				console.log(await readFromStdin());
 				break;
 			case "-n":
-				console.log(await readFromStdin(numberLines(option)));
+				console.log(numberLines(await readFromStdin(option)));
 				break;
 			case "-b":
-				console.log(await readFromStdin(numberNonEmptyLines(option)));
+				console.log(numberNonEmptyLines(await readFromStdin(option)));
 				break;
 			default:
 				console.log(readFromFile(option));
